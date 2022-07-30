@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+#pokemonImg {
+    max-width: 200px;
+}
+
+.mainContent {
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 20px 10px;
+    width: 350px;
+    max-height: 649px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.89)
+}
+
+#pokebolaImg {
+    max-width: 80px;
+}
+
+.mainText {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    color: #202020;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+#submitButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 6px;
+    background-color: #E11A22;
+    color: #fff;
+    font-size: 16px;
+    width: 250px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    border: none;
+}
+
+#submitButton:hover {
+    filter:brightness(0.9);
+}
+
+#submitButton:disabled {
+    background-color: #38393b;
+    cursor: not-allowed;
+}
+
+#resetButton {
+    background-color: #FFCB05;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    gap: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    width: 250px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+#resetButton:hover{
+    filter:brightness(0.9);
+}
+
+#resetButton:disabled {
+    background-color: #38393b;
+    cursor: not-allowed;
+}
+
+.svgImg {
+    fill: #fff;
+}
+
+#imageContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+#imagePokemon {
+    max-width: 100px
+}
+
+.imageVersus{
+    max-width:80px;
+}
+
+#imagePokemon2 {
+    max-width: 100px
+}
+
+.cardContent {
+    font-family: monospace;
+    padding: 10px;
+    width: 230px;
+    height: 80px;
+    background-color: #EDC500;
+    border: 1px solid  #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-weight: 900;
+    font-size: 15px;
+    text-align: center;
+    color: #202020;
+    gap: 10px;
+}
