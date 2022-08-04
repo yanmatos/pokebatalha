@@ -35,8 +35,8 @@ function Buscar() {
             .then(response => response.json())
             .then(p1 => {
                 var tipoDescrição1 = p1.types.map(typeInfo => typeInfo.type.name).toString()
-                html = 'Nome: ' + setToUpperCase(p1.name) + '<br>'
-                html = html + ' Nº: ' + randomPokemon1 + " Type: " + setToUpperCase(tipoDescrição1)
+                html = 'Name: ' + setToUpperCase(p1.name) + '<br>'
+                html = html + ' Nº: ' + randomPokemon1 + " Type: " + setToUpperCase(tipoDescrição1).replace(',', '/')
                 pokemonDescription.innerHTML = html
 
                 pokemonImage1.innerHTML = "<img src='" + p1.sprites.front_default + "'>"
@@ -59,8 +59,8 @@ function Buscar() {
                         .then(response => response.json())
                         .then(p2 => {
                             var tipoDescrição2 = p2.types.map(typeInfo => typeInfo.type.name).toString()
-                            html = 'Nome: ' + setToUpperCase(p2.name) + '<br>'
-                            html = html + ' Nº: ' + randomPokemon2 + " Type: " + setToUpperCase(tipoDescrição2)
+                            html = 'Name: ' + setToUpperCase(p2.name) + '<br>'
+                            html = html + ' Nº: ' + randomPokemon2 + " Type: " + setToUpperCase(tipoDescrição2).replace(',', '/')
                             pokemonDescription2.innerHTML = html
 
                             pokemonImage2.innerHTML = "<img src='" + p2.sprites.front_default + "'>"
