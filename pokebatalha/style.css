@@ -1,7 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-image: url("./images/pokemon.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 #pokemonImg {
@@ -33,7 +35,7 @@ body {
     color: #202020;
 }
 
-.buttons{
+.buttons {
     display: flex;
     flex-direction: column;
     gap: 10px
@@ -56,7 +58,7 @@ body {
 }
 
 #submitButton:hover {
-    filter:brightness(0.9);
+    filter: brightness(0.9);
 }
 
 #submitButton:disabled {
@@ -81,8 +83,8 @@ body {
     transition: filter 0.2s;
 }
 
-#resetButton:hover{
-    filter:brightness(0.9);
+#resetButton:hover {
+    filter: brightness(0.9);
 }
 
 #resetButton:disabled {
@@ -105,8 +107,8 @@ body {
     max-width: 100px
 }
 
-.imageVersus{
-    max-width:80px;
+.imageVersus {
+    max-width: 80px;
 }
 
 #imagePokemon2 {
@@ -119,7 +121,7 @@ body {
     width: 230px;
     height: 80px;
     background-color: #EDC500;
-    border: 1px solid  #111;
+    border: 1px solid #111;
     display: flex;
     justify-content: center;
     align-items: center;
